@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My First App</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="transition.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="container flex flex-col items-center px-4 mx-auto">
+    <i class="fab fa-vuejs text-center my-10 md:my-16 text-logo opacity-50"></i>
+  </div>
+  <div id="app">
+    <div class="container flex flex-col items-stretch items-center px-4 mx-auto">
+      <tuto-query></tuto-query>
+      <tuto-list :tutos="tutos"></tuto-list>
+      <tuto-error :error="error"></tuto-error>
+    </div>
+  </div>
+</body>
+</html>
